@@ -1,0 +1,32 @@
+.login {
+  .btns {
+    margin-bottom: 15px;
+
+    a {
+      padding-left: 20px;
+    }
+  }
+
+  .form-item {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    span, a {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    a {
+      margin: 0 5px;
+      width: 26px;
+      height: 29px;
+
+      &:nth-child(2) {
+        background: url(../img/qq.png) no-repeat;
+        background-size: contain;
+      }
+      &:last-child {
+        background: url(../img/weibo.png) no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}

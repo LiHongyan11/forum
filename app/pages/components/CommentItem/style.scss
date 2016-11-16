@@ -1,0 +1,102 @@
+.comment-item {
+  position: relative;
+  padding: 20px 0 10px;
+  border-bottom: 1px dotted #DFDFDF;
+
+  .detail-about {
+    position: relative;
+    margin-top: 5px;
+    line-height: 20px;
+    background-color: transparent;
+    padding: 0;
+    color: #999;
+    a, span {
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 12px;
+    }
+    a {
+      position: relative;
+      img {
+        display: block;
+        border-radius: 100%;
+        width: 46px;
+        height: 46px;
+      }
+      cite {
+        position: absolute;
+        right: 0;
+        line-height: 26px;
+        top: -3px;
+        left: 56px;
+        width: 260px;
+        color: #4f99cf;
+        font-size: 14px;
+        font-style: normal;
+        em {
+          padding-left: 5px;
+          color: #5FB878;
+          cursor: default;
+          font-size: 12px;
+          font-style: normal;
+        }
+      }
+    }
+    .detail-hits {
+      position: absolute;
+      left: 56px;
+      bottom: 0;
+      color: #999;
+    }
+  }
+
+  p {
+    margin: 25px 0 20px;
+    min-height: 0;
+    line-height: 24px;
+    font-size: 14px;
+  }
+
+  .detail-reply {
+    font-size: 12px;
+    i {
+      margin-left: 5px;
+      margin-right: 3px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      vertical-align: sub;
+    }
+    a {
+      margin-right: 10px;
+      color: #999;
+      &:first-child {
+        i {
+          background: url(./img/great.png) center center no-repeat;
+          background-size: contain;
+        }
+        &:hover {
+          color: #E6162D;
+          i {
+            background: url(./img/great-hover.png) center center no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+      &:last-child {
+        i {
+          background: url(./img/editback.png) center center no-repeat;
+          background-size: 15px 15px;
+        }
+        &:hover {
+          color: #E6162D;
+          i {
+            background: url(./img/editback-hover.png) center center no-repeat;
+            background-size: 15px 15px;
+          }
+        }
+      }
+    }
+  }
+}

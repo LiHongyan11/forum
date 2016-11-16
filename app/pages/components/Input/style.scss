@@ -1,0 +1,41 @@
+.input-item {
+  margin-bottom: 15px;
+  overflow: hidden;
+  label {
+    float: left;
+    display: block;
+    font-weight: 400;
+    width: 80px;
+    padding: 8px 15px;
+    line-height: 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px 0 0 2px;
+    text-align: center;
+    background-color: #FBFBFB;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  div {
+    float: left;
+    width: 190px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    input {
+      border-radius: 0 2px 2px 0;
+      display: block;
+      width: 100%;
+      padding-left: 10px;
+      height: 38px;
+      line-height: 38px;
+      border: 1px solid #e6e6e6;
+      border-left: 0;
+      background-color: #fff;
+      outline: 0;
+      transition: border-color .3s cubic-bezier(.65,.05,.35,.5);
+      box-sizing: border-box!important;
+    }
+  }
+}

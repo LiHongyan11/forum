@@ -1,0 +1,53 @@
+.notification-wrap {
+  display: none;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: rgba(0,0,0, 0.4);
+  text-align: center;
+  &.show {
+    display: block;
+  }
+  .notification-box {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 400px;
+    max-height: 400px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 15px 0;
+
+    h5 {
+      line-height: 30px;
+      font-size: 16px;
+      padding: 0 80px;
+    }
+
+    p {
+      line-height: 25px;
+      font-size: 12px;
+      padding: 0 10px;
+    }
+    .btns {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid #eee;
+      button {
+        padding: 3px 5px;
+        background: #009688;
+        color: #fff;
+        border-radius: 4px;
+        margin-left: 10px;
+        &:first-child {
+          background: transparent;
+          color: #333;
+          border: 1px solid #ccc;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

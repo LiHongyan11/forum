@@ -1,0 +1,91 @@
+.header {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 65px;
+  background-color: #393D49;
+  span, p, p a, .unlogin, .main > a, .nav, .nav i, .nav-user, .unlogin i {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+  .main {
+    overflow: hidden;
+    height: 100%;
+    line-height: 65px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .main>a {
+    float: left;
+    width: 135px;
+    text-indent: -666px;
+    background: url(./img/logo.jpg) center center no-repeat;
+  }
+  .nav {
+    display: inline-block;
+    float: left;
+    margin-left: 100px;
+    i {
+      display: inline-block;
+      padding-right: 8px;
+      width: 26px;
+      height: 26px;
+
+    }
+    a {
+      padding: 0 20px;
+      font-size: 14px;
+      color: #999;
+      &:first-child>i {
+        background: url(./img/question.png) no-repeat;
+        background-size: contain;
+      }
+      &:last-child>i {
+        background: url(./img/ui.png) no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+  .nav-user {
+    float: right;
+    .unlogin {
+      margin-right: 10px;
+      i {
+        display: inline-block;
+        // margin-bottom: 12px;
+        width: 35px;
+        height: 35px;
+        background: url(./img/user.png) center center no-repeat;
+        background-size: contain;
+      }
+    }
+    span {
+      a {
+        padding: 0 10px;
+        color: #A9B7B7;
+        font-size: 14px;
+      }
+    }
+    p {
+      margin-left: 20px;
+      text-align: center;
+      a {
+        margin: 0 10px;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        &:first-child {
+          background: url(./img/QQ.png) center center no-repeat;
+          background-size: contain;
+        }
+        &:last-child {
+          background: url(./img/weibo.png) center center no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.search-box {
+  position: relative;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: top;
+  input {
+    display: block;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    height: 38px;
+    line-height: 38px;
+    line-height: 36px\9;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    border-radius: 2px;
+    padding-right: 30px;
+  }
+  span {
+    display: inline-block;
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    background: url(./img/search.png) no-repeat;
+    background-size: contain;
+  }
+}

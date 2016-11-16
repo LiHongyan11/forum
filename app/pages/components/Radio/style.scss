@@ -1,0 +1,19 @@
+.radio-item {
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 20px;
+  border-right: 1px solid #009E94;
+  font-size: 14px;
+  &.active {
+    background-color: #009E94;
+    color: #fff;
+  }
+}
+
+.radio-group {
+  display: inline-block;
+  border: 1px solid #009E94;
+  border-right: none;
+  font-size: 0;
+}

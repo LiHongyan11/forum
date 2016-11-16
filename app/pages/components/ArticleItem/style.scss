@@ -1,0 +1,86 @@
+.article-item {
+  padding: 30px 0;
+  border-top: 1px solid #e9e9e9;
+  overflow: hidden;
+  &:first-child {
+    border-top: none;
+  }
+
+  h5 {
+    font-size: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 20px;
+      font-size: 12px;
+      border-radius: 4px;
+      border: 1px solid #00c1de;
+      color: #00c1de;
+      padding: 0 5px;
+      margin-top: -6px;
+      margin-right: 5px;
+    }
+  }
+
+  .article-info {
+    color: #999;
+    line-height: 34px;
+    overflow: hidden;
+    margin-top: 8px;
+    font-size: 12px;
+    a {
+      margin-right: 9px;
+      display: inline-block;
+      vertical-align: middle;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      background-clip: padding-box;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+      i {
+        display: inline-block;
+        vertical-align: sub;
+        width: 16px;
+        height: 16px;
+        background: url(../../asserts/img/eye.png) no-repeat;
+        background-size: 16px 18px;
+        margin-right: 3px;
+      }
+    }
+  }
+
+  p {
+    padding-top: 18px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #666;
+    word-break: break-all;
+    overflow: hidden;
+  }
+
+  .tags {
+    a {
+      font-size: 12px;
+      color: #999;
+      display: inline-block;
+      margin: 15px 5px 0 0;
+      padding: 5px 8px 5px;
+      border: 1px solid #ccc;
+      background: #fff;;
+      border-radius: 15px;
+      background-clip: padding-box;
+    }
+  }
+}

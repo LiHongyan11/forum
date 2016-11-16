@@ -1,0 +1,150 @@
+.artical-box, .login {
+  margin-top: 80px;
+}
+
+.artical-box {
+  .wrap {
+    float: left;
+    width: 100%;
+    min-height: 300px;
+  }
+  .content {
+    margin-right: 357px;
+
+    .list-tab {
+      position: relative;
+      .button-item {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+    .load-more {
+      display: block;
+      border: 1px solid #e1ebec;
+      background: #f1f6fa;
+      line-height: 34px;
+      text-align: center;
+      color: #666;
+    }
+  }
+}
+
+.detail {
+  h1 {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 5px 0;
+    font-weight: 400;
+  }
+  .detail-tip {
+    margin: 5px 0 15px;
+    position: relative;
+    span {
+      display: inline-block;
+      vertical-align: top;
+    }
+    &>span {
+      height: 20px;
+      line-height: 20px;
+      padding: 0 5px;
+      background-color: #999;
+      color: #fff;
+      font-size: 12px;
+      &:first-child {
+        background-color: #c00;
+        margin-right: 5px;
+      }
+    }
+    .detail-hit {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 12px;
+      i {
+        margin-left: 5px;
+        margin-right: 3px;
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        vertical-align: sub;
+      }
+      span {
+        &:first-child {
+          i {
+            background: url(../img/comment.png) no-repeat;
+            background-size: contain;
+          }
+        }
+        &:last-child {
+          i {
+            background: url(../img/eye.png) no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+    }
+  }
+
+  .detail-about {
+    position: relative;
+    margin-top: 5px;
+    line-height: 20px;
+    background-color: #F2F2F2;
+    padding: 15px;
+    color: #999;
+    a, span {
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 12px;
+    }
+    a {
+      position: relative;
+      img {
+        display: block;
+        border-radius: 100%;
+        width: 46px;
+        height: 46px;
+      }
+      cite {
+        position: absolute;
+        right: 0;
+        line-height: 26px;
+        top: -3px;
+        left: 56px;
+        width: 260px;
+        color: #4f99cf;
+        font-size: 14px;
+        font-style: normal;
+        em {
+          padding-left: 5px;
+          color: #999;
+          cursor: default;
+          font-size: 12px;
+          font-style: normal;
+        }
+      }
+    }
+    .detail-hits {
+      position: absolute;
+      left: 71px;
+      bottom: 15px;
+      color: #FF7200;
+    }
+  }
+
+  .detail-body {
+    margin: 20px 0 50px;
+    min-height: 200px;
+    line-height: 26px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .artical-box .content {
+    margin-right: 0;
+  }
+}
