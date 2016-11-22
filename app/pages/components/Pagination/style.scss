@@ -1,0 +1,29 @@
+.pagination-box, .pagination-box * {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.pagination-box {
+  margin: 20px 0;
+  border: 1px solid #009E94;
+  border-right: none;
+  border-bottom: none;
+  font-size: 0;
+
+  a {
+    padding: 0 20px;
+    line-height: 36px;
+    border-right: 1px solid #009E94;
+    border-bottom: 1px solid #009E94;
+    font-size: 14px;
+
+    &:hover {
+      color: #aaa;
+    }
+
+    &.active {
+      background-color: #009E94;
+      color: #fff;
+    }
+  }
+}

@@ -10,6 +10,7 @@ import CommentItem from './CommentItem'
 import Breadcrumb from './Breadcrumbs'
 import Input from './Input'
 import Textarea from './Textarea'
+import Pagination from './Pagination'
 
 export { 
   Header, 
@@ -24,4 +25,5 @@ export {
   Input,
   CommentItem, 
   Textarea,
+  Pagination,
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
 
-import { Sidebar, Banner, CommentItem, Textarea, Button } from '../../components'
+import { Sidebar, Banner, CommentItem, Textarea, Button, Pagination } from '../../components'
 
 class Detail extends React.Component {
   constructor(props) {
@@ -52,6 +52,7 @@ class Detail extends React.Component {
               <div className="comment-list">
                 <CommentItem />
               </div>
+              <Pagination />
               <Textarea placeholder="我要回答" />
               <Button>提交回答</Button>
             </div>
