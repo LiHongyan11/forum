@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
 
 import { Radio, Search, Button, ArticleItem, Banner, Sidebar } from '../../components'
+
+import {
+  getArticleList,
+} from '../../actions/article'
 
 class List extends React.Component {
   constructor(props) {
@@ -13,6 +17,7 @@ class List extends React.Component {
     }
   }
   componentDidMount() {
+    this.props.getArticleList();
   }
 
   componentWillReceiveProps(nextProps) {
@@ -22,7 +27,6 @@ class List extends React.Component {
     this.setState({
       value: val,
     })
-    console.log(val)
   }
 
   handleSearch(val) {
@@ -64,9 +68,14 @@ class List extends React.Component {
   }
 }
 
+List.propTypes = {
+  getArticleList: PropTypes.func,
+  articleList: PropTypes.object,
+}
+
 export default connect(
   state => ({
-    // sign: state.config.sign,
+    articleList: state.article.articleList,
   }), { 
-  // getDDSign
+  getArticleList
 })(List)

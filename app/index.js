@@ -7,13 +7,13 @@ import { Provider } from 'react-redux'
 import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 
 //web
-import welcomeReducer from './pages/reducers/welcome'
+import { article } from './pages/reducers'
 
 //h5
-import { Main, List, Detail, Login } from './pages/containers'
+import { Main, List, Detail, Login, Test, Register } from './pages/containers'
 
 const reducer = combineReducers({
-  welcomeReducer,
+  article,
   routing: routerReducer
 })
 
@@ -37,7 +37,9 @@ ReactDOM.render(
           <IndexRoute component={List} />
           <Route path="list" component={List} />
           <Route path="login" component={Login} />
+          <Route path="register" component={Register} />
           <Route path="detail" component={Detail} />
+          <Route path="test" component={Test} />
         </Route>
       </Router>
     </div>

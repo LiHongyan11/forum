@@ -8,7 +8,7 @@
     "url": "https://github.com/rlog/react-base.git"
   },
   "scripts": {
-    "dev": "webpack-dev-server --hot --inline --color --host 0.0.0.0 --port 9008 --content-base dev",
+    "dev": "webpack-dev-server --inline --color --host 0.0.0.0 --port 9008 --content-base dev",
     "clean": "rm -rf dist && mkdir dist",
     "preprod": "npm run clean",
     "prod": "webpack --config webpack.prod.config.js",
@@ -56,11 +56,11 @@
     "moment": "^2.11.1",
     "history": "^1.13.1",
     "lodash": "^4.0.0",
-    "react": "^15.0.2",
-    "react-dom": "^15.0.2",
+    "react": "0.14.7",
+    "react-dom": "0.14.7",
     "react-dnd": "^2.1.4",
     "react-redux": "^4.3.0",
-    "react-router": "^2.0.0",
+    "react-router": "^3.0.1",
     "react-router-redux": "^4.0.5",
     "redux": "^3.2.1",
     "redux-thunk": "^1.0.3",

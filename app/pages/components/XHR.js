@@ -16,14 +16,13 @@ const XHR = function(conf={}) {
   let resHeader = conf.resHeader;
 
   const handleEnd = function(err, res) {
-    if (res && res.ok && res.body && res.body.code === '200') {
-      globalLoadingHideHandler && globalLoadingHideHandler();
+    if (res && res.ok && res.body && res.body.code === 200) {
       succ && succ(res.body.data, res.body, res.header)
-    } else if (res.body && res.body.code === '401') {
+    } else if (res.body && res.body.code === 401) {
       globalErrorHandler && globalErrorHandler(res.body.msg);
     } else {
-      globalLoadingHideHandler && globalLoadingHideHandler();
       const msg = res && res.body && res.body.msg
+      console.log(msg)
       globalErrorHandler && globalErrorHandler( msg || '服务器错误');
       if (error) {
         error(res && res.body)
@@ -33,7 +32,6 @@ const XHR = function(conf={}) {
   };
   
   let token = localStorage.token;
-  globalLoadingHandler && globalLoadingHandler('');
   if (method === 'get') {
     request[method](api)
       .set("Authorization",token)

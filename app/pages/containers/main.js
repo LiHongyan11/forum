@@ -23,15 +23,11 @@ class Index extends React.Component {
   }
 
   onGlobalHandler(msg, description) {
-    this.refs.notification.show();
+    this.refs.notification.show(msg);
   }
 
   handleOk() {
     console.log('ok')
-  }
-
-  handleCancel() {
-    console.log('cancel')
   }
 
   render() {
@@ -39,8 +35,8 @@ class Index extends React.Component {
       <div className="wrap">
         <Header />
         <Notification 
-          ref="notification" 
-          handleCancel={this.handleCancel}
+          ref="notification"
+          footer={[<button value="submit">确定</button>]}
           handleOk={this.handleOk} />
         {this.props.children}
       </div>

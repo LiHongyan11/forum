@@ -14,9 +14,10 @@ class Notification extends React.Component {
   componentWillReceiveProps(nextProps) {
   }
 
-  show() {
+  show(msg) {
     this.setState({
       show: true,
+      msg,
     })
   }
 
@@ -24,7 +25,6 @@ class Notification extends React.Component {
     this.setState({
       show: false,
     });
-    console.log(e.target.value)
     if (e.target.value === 'submit') this.props.handleOk();
     else if (e.target.value === 'back') this.props.handleCancel();
   }
@@ -32,7 +32,6 @@ class Notification extends React.Component {
   render() {
     const {
       title,
-      msg,
       footer,
     } = this.props;
     let footerHtml = [];
@@ -41,6 +40,7 @@ class Notification extends React.Component {
         footerHtml.push(React.cloneElement(item, Object.assign({}, item.props, {
           onClick: (e) => this.hide(e),
           key: `footer-${key}`,
+          className: item.value !== 'submit' ? 'gray' : ''
         })))
       )
     }
@@ -48,7 +48,7 @@ class Notification extends React.Component {
       <div className={this.state.show ? 'notification-wrap show' : 'notification-wrap'}>
         <div className="notification-box">
           <h5>{title}</h5>
-          <p>{msg}</p>
+          <p>{this.state.msg}</p>
           <div className="btns">
             { 
               footerHtml
@@ -70,7 +70,6 @@ Notification.propTypes = {
 
 Notification.defaultProps = {
   title: '提示',
-  msg: '服务器错误',
   footer: [<button value="back">取消</button>,<button value="submit">确定</button>]
 }
 

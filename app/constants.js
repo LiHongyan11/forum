@@ -1,2 +1,2 @@
 
-export const GET_USER_INFO = 'GET_USER_INFO';
+export const GET_ARTICLE_LIST = 'GET_ARTICLE_LIST';

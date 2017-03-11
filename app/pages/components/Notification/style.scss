@@ -41,7 +41,8 @@
         color: #fff;
         border-radius: 4px;
         margin-left: 10px;
-        &:first-child {
+
+        .gray {
           background: transparent;
           color: #333;
           border: 1px solid #ccc;

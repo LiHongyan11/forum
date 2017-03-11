@@ -20,7 +20,7 @@ class Button extends React.Component {
     const {
     } = this.props;
     return (
-      <a className="button-item">
+      <a className="button-item" {...this.props}>
         { this.props.children }
       </a>
     )
